@@ -18,7 +18,7 @@ public class Remed {
         // Menghitung rata-rata
         double average = (a + b) / 2.0;
 
-        // Output
+        // Outputnya
         System.out.println("Nilai terkecil: " + min);
         System.out.println("Nilai terbesar: " + max);
         System.out.println("Rata-rata: " + average);
