@@ -38,5 +38,27 @@ public class StudiKasusV1 {
         } else {
             System.out.println("Total Biaya Parkir yang kamu Rp: " + totalBayar);
         }
+
+        System.out.println("--------------------------------");
+
+        //Pak Rudi, Pengguna Baru Pak Rudi memarkir mobilnya di Megapark selama 3 jam. Setelah selesai, ia menuju mesin pembayaran untuk memeriksa total biaya parkir. Mesin menunjukkan rincian berikut:
+        // Jam pertama: Rp5.000.
+        // 2 jam tambahan: Rp3.000 x 2 = Rp6.000.
+        // Total biaya parkir: Rp11.000.
+        // Pak Rudi tersenyum, merasa tarif ini sangat masuk akal.
+
+        double totalJamRudi = 3; // Total jam parkir
+        double jamPertamaRudi = 5000; // Biaya jam pertama
+        double biayaJamTambahan = 3000; // Biaya per jam tambahan
+
+        // Menghitung biaya jam tambahan
+        double jamTambahanRudi = totalJamRudi > 1 ? (totalJamRudi - 1) * biayaJamTambahan : 0;
+
+        // Menghitung total biaya parkir
+        double totalBayarRudi = jamPertamaRudi + jamTambahanRudi;
+
+        // Menampilkan hasil
+        System.out.println("Total biaya parkir: Rp" + totalBayarRudi);
+    
     }
 }
